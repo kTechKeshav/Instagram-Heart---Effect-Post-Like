@@ -1,0 +1,95 @@
+*{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+
+html, body{
+      width: 100%;
+      height: 100%;
+      font-size: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(45deg, #fb00ff, yellow, #fb00ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+}
+
+h1{
+      font-size: 3vw;
+      font-variant: small-caps;
+      text-shadow: 1px 2px 10px greenyellow;
+}
+
+#box{
+      box-shadow: 0px 0px 15px 2px #000;
+      background-image: radial-gradient(circle, yellow 50%, #fb00ff);
+      padding: 10px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      width: 20%;
+      height: 72%;
+      border-radius: 15px;
+}
+
+#imgcontainer{
+      position: relative;
+      width: 95%;
+      height: 80%;
+      border-radius: 10px;
+}
+
+img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+}
+
+.ri-heart-3-fill{
+      opacity: 0;
+      color: aliceblue;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      font-size: 0rem;
+      transition: all .1s ease-in-out;
+}
+
+.ri-heart-fill{
+      font-size: 4rem;
+      transition: font-size linear .2s;
+}
+.ri-heart-fill:hover{
+      font-size: 4.5rem;
+}
+
+.ri-thumb-up-fill{
+      font-size: 2vw;
+      color: rgb(0, 255, 60);
+      text-shadow: 0px 0px 5px #000;
+}
+
+@media (max-width:912px){
+      #box{
+            width: 80vw;
+      }
+      h1{
+            font-size: 6vw;
+      }
+      .ri-thumb-up-fill{
+            font-size: 6vw;
+      }
+}
